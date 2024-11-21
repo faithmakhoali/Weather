@@ -61,7 +61,7 @@ main {
 
 .weather-app-details {
   font-size: 16px;
-  color: rgba(90, 57, 240, 0.4);
+  color: whitesmoke;
   line-height: 24px;
   font-weight: 500;
 }
@@ -98,7 +98,7 @@ main {
 
 .weather-forecast-date {
   text-align: center;
-  color: rgba(39, 33, 66, 0.4);
+  color: whitesmoke;
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 10px;
