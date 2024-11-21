@@ -118,6 +118,9 @@ main {
   display: flex;
   justify-content: center;
 }
+.weather-forecast-icon:hover {
+  transform: scale(2);
+}
 
 .weather-forecast-temperature {
   padding: 0 10px;
@@ -125,7 +128,7 @@ main {
 }
 
 .weather-forecast-temperature:hover {
-  transform: scale(1.2);
+  transform: scale(1.8);
   font-weight: bold;
   color: hsl(197, 88%, 59%);
 }
