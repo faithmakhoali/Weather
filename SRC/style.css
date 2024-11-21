@@ -8,7 +8,7 @@ a {
 }
 
 .weather-app {
-  background: url("https://images.unsplash.com/photo-1561553873-e8491a564fd0?q=80&w=2147&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+  background: url("https://images.unsplash.com/photo-1622396089867-7a253c2d7171?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
     no-repeat center center;
   background-size: cover;
   max-width: 600px;
@@ -67,7 +67,7 @@ main {
 }
 
 .weather-app-details strong {
-  color: #f65282;
+  color: #52c8f6;
 }
 
 .weather-app-temperature-container {
@@ -113,7 +113,7 @@ main {
 
 .weather-forecast-temperatures {
   text-align: center;
-  color: #f65282;
+  color: #52c2f6;
   margin-top: 10px;
   display: flex;
   justify-content: center;
@@ -121,13 +121,13 @@ main {
 
 .weather-forecast-temperature {
   padding: 0 10px;
-  transition: transform 0.3s ease; /* Smooth transition for scaling */
+  transition: transform 0.3s ease;
 }
 
 .weather-forecast-temperature:hover {
-  transform: scale(1.2); /* Enlarge the element when hovered */
-  font-weight: bold; /* Make the font bold to emphasize it */
-  color: #f65282; /* Change color on hover for better contrast */
+  transform: scale(1.2);
+  font-weight: bold;
+  color: #f65282;
 }
 
 footer {
