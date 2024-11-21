@@ -1,18 +1,13 @@
-/* Background gradient */
 body {
   background: linear-gradient(to top, #09203f 0%, #537895 100%);
-  font-family: "Arial", sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-/* Link styling */
 a {
   color: rgb(176, 127, 255);
   text-decoration: none;
 }
 
-/* Search input styling */
 .search-input {
   background-color: white;
   width: 75%;
@@ -24,11 +19,8 @@ a {
   align-items: center;
   position: relative;
   z-index: 1;
-  font-size: 16px;
-  box-sizing: border-box; /* Ensures padding is inside the width */
 }
 
-/* Search button styling */
 .search-button {
   margin-left: 5px;
   font-size: 20px;
@@ -38,77 +30,61 @@ a {
   padding: 21px;
   line-height: 1;
   border-radius: 5px;
-  align-items: center;
-  cursor: pointer; /* Adds a pointer cursor */
 }
 
-/* Center the button container */
-.button-container {
-  text-align: center;
-  margin-top: 50px;
-}
-
-/* Main content padding */
 main {
   padding: 30px 0;
-  text-align: center;
 }
 
-/* Heading styling */
 h1,
 h2 {
-  font-size: 50px;
+  font-size: 35px;
   color: antiquewhite;
   text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Added text shadow for readability */
 }
 
-/* Paragraph styling for temperature */
 p {
-  font-size: 70px;
+  font-size: 25px;
   color: antiquewhite;
   text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-/* Footer styling */
+.forecast-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.forecast-day {
+  text-align: center;
+  color: antiquewhite;
+}
+
+.forecast-date {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.forecast-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.forecast-temperatures {
+  margin-top: 5px;
+}
+
+.forecast-temp-max {
+  font-weight: bold;
+}
+
+.forecast-temp-min {
+  color: #d3d3d3;
+}
+
 footer {
   border-top: 1px solid #f9f7fe;
   text-align: center;
   padding-top: 15px;
   color: rgba(39, 33, 66, 0.4);
-  font-size: 14px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .search-input {
-    width: 90%;
-  }
-
-  .search-button {
-    width: 100%;
-    padding: 15px;
-    font-size: 18px;
-  }
-
-  h1,
-  h2 {
-    font-size: 35px;
-  }
-
-  p {
-    font-size: 50px;
-  }
-}
-
-@media (max-width: 480px) {
-  h1,
-  h2 {
-    font-size: 28px;
-  }
-
-  p {
-    font-size: 40px;
-  }
 }

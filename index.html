@@ -3,45 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="SRC/style.css" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>My Vanilla Weather App</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
+    <header>
+      <form id="search-form">
+        <input
+          type="search"
+          placeholder="Enter a city..."
+          required
+          class="search-input"
+          id="search-input"
+        />
+        <input type="submit" value="Search" class="search-button" />
+      </form>
+    </header>
     <main>
       <div class="current-weather">
         <div>
-          <h3 id="current-date"></h3>
-          <h1>Friday, September 13th 15:44</h1>
+          <h1 id="current-date"></h1>
           <h2 class="current-city" id="current-city">
             Pretoria <br />
             <span class="current-details" id="current-details">
               moderate rain <br />
               Humidity: <strong>87%</strong>, Wind:
-              <strong>7.2 km/h</strong></span
-            >
+              <strong>7.2 km/h</strong>
+            </span>
           </h2>
           <p class="current-temp-icon">
             <span>☀️</span>
-            <span class="current-temp" id="current-temperature"> 30 </span>
+            <span class="current-temp" id="current-temperature">30</span>
             <span class="current-temp-unit">°C</span>
           </p>
         </div>
       </div>
+      <div id="forecast" class="forecast"></div>
     </main>
-    <header>
-      <form id="search-form">
-        <label for="search-input" class="sr-only">Enter a city...</label>
-        <input
-          type="search"
-          id="search-input"
-          placeholder="Enter a city..."
-          required
-          class="search-input"
-        />
-        <input type="submit" value="Search" class="search-button" />
-      </form>
-    </header>
     <footer>
       This project was coded by
       <a
@@ -53,13 +52,13 @@
       <a
         href="https://github.com/faithmakhoali/My-Vanilla-weather-app"
         target="_blank"
-        >on Github</a
+        >open-sourced on GitHub</a
       >
       and
       <a href="https://frolicking-dango-5f373d.netlify.app/" target="_blank"
         >hosted on Netlify</a
       >
     </footer>
+    <script src="src/index.js"></script>
   </body>
-  <script src="SRC/index.js"></script>
 </html>
