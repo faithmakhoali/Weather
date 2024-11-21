@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="SRC/style.css" />
+    <title>My Vanilla Weather App</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="current-weather">
+        <div>
+          <h3 id="current-date"></h3>
+          <h1>Friday, September 13th 15:44</h1>
+          <h2 class="current-city" id="current-city">
+            Pretoria <br />
+            <span class="current-details" id="current-details">
+              moderate rain <br />
+              Humidity: <strong>87%</strong>, Wind:
+              <strong>7.2 km/h</strong></span
+            >
+          </h2>
+          <p class="current-temp-icon">
+            <span>☀️</span>
+            <span class="current-temp" id="current-temperature"> 30 </span>
+            <span class="current-temp-unit">°C</span>
+          </p>
+        </div>
+      </div>
+    </main>
+    <header>
+      <form id="search-form">
+        <label for="search-input" class="sr-only">Enter a city...</label>
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Enter a city..."
+          required
+          class="search-input"
+        />
+        <input type="submit" value="Search" class="search-button" />
+      </form>
+    </header>
+    <footer>
+      This project was coded by
+      <a
+        href="https://www.shecodes.io/graduates/139452-ntebogeng-faith-makhoali"
+        target="_blank"
+        >Faith Makhoali</a
+      >
+      and is
+      <a
+        href="https://github.com/faithmakhoali/My-Vanilla-weather-app"
+        target="_blank"
+        >on Github</a
+      >
+      and
+      <a href="https://frolicking-dango-5f373d.netlify.app/" target="_blank"
+        >hosted on Netlify</a
+      >
+    </footer>
+  </body>
+  <script src="SRC/index.js"></script>
+</html>
