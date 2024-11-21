@@ -8,8 +8,8 @@ a {
 }
 
 .weather-app {
-  background: url("https://source.unsplash.com/1600x900/?weather") no-repeat
-    center center;
+  background: url("https://images.unsplash.com/photo-1534629938736-b1b076531d3b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+    no-repeat center center;
   background-size: cover;
   max-width: 600px;
   margin: 45px auto;
