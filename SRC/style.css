@@ -21,18 +21,17 @@ a {
 }
 
 header {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid #f9f7fe;
   padding: 0 0 30px 0;
 }
 
 .search-form-input {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: #f9f7fe;
   border: none;
   border-radius: 6px;
   width: 80%;
   font-size: 16px;
   padding: 15px 20px;
-  color: #333;
 }
 
 .search-form-button {
@@ -43,12 +42,6 @@ header {
   margin-left: 5px;
   border-radius: 6px;
   color: white;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.search-form-button:hover {
-  background: #6a46c6;
 }
 
 main {
@@ -58,8 +51,6 @@ main {
 .weather-app-data {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  text-align: center;
 }
 
 .weather-app-city {
@@ -70,7 +61,7 @@ main {
 
 .weather-app-details {
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(39, 33, 66, 0.4);
   line-height: 24px;
   font-weight: 500;
 }
@@ -81,8 +72,6 @@ main {
 
 .weather-app-temperature-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .weather-app-icon {
@@ -94,7 +83,6 @@ main {
   font-size: 88px;
   line-height: 88px;
   font-weight: bold;
-  margin-right: 15px;
 }
 
 .weather-app-unit {
@@ -108,20 +96,9 @@ main {
   margin-top: 30px;
 }
 
-.weather-forecast-day {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.4s ease-in-out;
-}
-
-.weather-forecast-day.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 .weather-forecast-date {
   text-align: center;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(39, 33, 66, 0.4);
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 10px;
@@ -136,7 +113,7 @@ main {
 
 .weather-forecast-temperatures {
   text-align: center;
-  color: #9affd2;
+  color: #f65282;
   margin-top: 10px;
   display: flex;
   justify-content: center;
@@ -144,12 +121,19 @@ main {
 
 .weather-forecast-temperature {
   padding: 0 10px;
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.weather-forecast-temperature:hover {
+  transform: scale(1.2); /* Enlarge the element when hovered */
+  font-weight: bold; /* Make the font bold to emphasize it */
+  color: #f65282; /* Change color on hover for better contrast */
 }
 
 footer {
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid #f9f7fe;
   padding: 30px 0 0 0;
   text-align: center;
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.6);
 }
