@@ -113,7 +113,7 @@ main {
 
 .weather-forecast-temperatures {
   text-align: center;
-  color: #52c2f6;
+  color: hsl(197, 88%, 59%);
   margin-top: 10px;
   display: flex;
   justify-content: center;
@@ -127,7 +127,7 @@ main {
 .weather-forecast-temperature:hover {
   transform: scale(1.2);
   font-weight: bold;
-  color: #f65282;
+  color: hsl(197, 88%, 59%);
 }
 
 footer {
@@ -135,5 +135,5 @@ footer {
   padding: 30px 0 0 0;
   text-align: center;
   font-size: 14px;
-  color: rgba(0, 0, 0, 0.6);
+  color: #000000ef;
 }
