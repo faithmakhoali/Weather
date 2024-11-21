@@ -1,4 +1,9 @@
 function refreshWeather(response) {
+  let loaderElement = document.querySelector("#loader");
+  if (loaderElement) {
+    loaderElement.style.display = "none";
+  }
+
   let temperatureElement = document.querySelector("#temperature");
   let temperature = response.data.temperature.current;
   let cityElement = document.querySelector("#city");
@@ -42,6 +47,11 @@ function formatDate(date) {
 }
 
 function searchCity(city) {
+  let loaderElement = document.querySelector("#loader");
+  if (loaderElement) {
+    loaderElement.style.display = "block";
+  }
+
   let apiKey = "b2a5adcct04b33178913oc335f405433";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(refreshWeather);
@@ -75,25 +85,34 @@ function displayForecast(response) {
       forecastHtml =
         forecastHtml +
         `
-      <div class="weather-forecast-day">
-        <div class="weather-forecast-date">${formatDay(day.time)}</div>
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">${formatDay(day.time)}</div>
 
-        <img src="${day.condition.icon_url}" class="weather-forecast-icon" />
-        <div class="weather-forecast-temperatures">
-          <div class="weather-forecast-temperature">
-            <strong>${Math.round(day.temperature.maximum)}º</strong>
+            <img src="${
+              day.condition.icon_url
+            }" class="weather-forecast-icon" />
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>${Math.round(day.temperature.maximum)}º</strong>
+              </div>
+              <div class="weather-forecast-temperature">${Math.round(
+                day.temperature.minimum
+              )}º</div>
+            </div>
           </div>
-          <div class="weather-forecast-temperature">${Math.round(
-            day.temperature.minimum
-          )}º</div>
-        </div>
-      </div>
-    `;
+        `;
     }
   });
 
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
+
+  let forecastDays = document.querySelectorAll(".weather-forecast-day");
+  forecastDays.forEach((day, index) => {
+    setTimeout(() => {
+      day.classList.add("visible");
+    }, index * 200);
+  });
 }
 
 let searchFormElement = document.querySelector("#search-form");
